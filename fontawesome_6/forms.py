@@ -27,5 +27,5 @@ class IconFormField(forms.Field):
 
         return {
             'class': ' '.join(classes),
-            'data-fontawesome-prefix':fontawesome_prefix
+            'data-fontawesome-prefix': fontawesome_prefix
         }

@@ -14,7 +14,7 @@ export default [
   {
     input: "src/js/django-fontawesome.js",
     output: {
-      file: "fontawesome_5/static/fontawesome_5/js/django-fontawesome.js",
+      file: "fontawesome_6/static/fontawesome_6/js/django-fontawesome.js",
       format: "iife"
     },
     plugins: [resolve(), commonjs(), babel(), ...(production ? [terser()] : [])]
@@ -22,7 +22,7 @@ export default [
   {
     input: "src/scss/django-fontawesome.scss",
     output: {
-      file: "fontawesome_5/static/fontawesome_5/css/django-fontawesome.css",
+      file: "fontawesome_6/static/fontawesome_6/css/django-fontawesome.css",
       format: "es"
     },
     plugins: [

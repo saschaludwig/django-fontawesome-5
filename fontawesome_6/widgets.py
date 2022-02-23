@@ -11,7 +11,7 @@ CHOICES = get_icon_choices()
 
 
 class IconWidget(forms.Select):
-    template_name = 'fontawesome_5/select.html'
+    template_name = 'fontawesome_6/select.html'
 
     def __init__(self, attrs=None):
         super(IconWidget, self).__init__(attrs, choices=CHOICES)
@@ -19,7 +19,7 @@ class IconWidget(forms.Select):
     class Media:
 
         js = (
-            'fontawesome_5/js/django-fontawesome.js',
+            'fontawesome_6/js/django-fontawesome.js',
         )
 
         css = {

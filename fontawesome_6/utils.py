@@ -4,7 +4,7 @@ import json
 from django.conf import settings
 
 
-renderer = getattr(settings, 'FONTAWESOME_5_RENDERER', 'default')
+renderer = getattr(settings, 'FONTAWESOME_6_RENDERER', 'default')
 path = 'icons_semantic_ui.json' if renderer == 'semantic_ui' else 'icons.json'
 
 

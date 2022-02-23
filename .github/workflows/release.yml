@@ -24,12 +24,12 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: js
-          path: fontawesome_5/static/fontawesome_5/js/django-fontawesome.js
+          path: fontawesome_6/static/fontawesome_6/js/django-fontawesome.js
       - name: Upload css artifact
         uses: actions/upload-artifact@v1
         with:
           name: css
-          path: fontawesome_5/static/fontawesome_5/css/django-fontawesome.css
+          path: fontawesome_6/static/fontawesome_6/css/django-fontawesome.css
   backend:
     name: Backend
     needs: frontend
@@ -49,12 +49,12 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: js
-          path: fontawesome_5/static/fontawesome_5/js/
+          path: fontawesome_6/static/fontawesome_6/js/
       - name: Download css artifact
         uses: actions/download-artifact@v1
         with:
           name: css
-          path: fontawesome_5/static/fontawesome_5/css/
+          path: fontawesome_6/static/fontawesome_6/css/
       - name: Build and publish
         env:
           TWINE_USERNAME: __token__

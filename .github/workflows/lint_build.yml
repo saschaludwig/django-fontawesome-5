@@ -24,7 +24,7 @@ jobs:
       - name: Eslint
         run: eslint src
       - name: Stylelint
-        run: stylelint src
+        run: stylelint "src/**/*.scss"
       - name: Build
         run: npm run build:production
   backend:
@@ -45,6 +45,6 @@ jobs:
           pipenv install --deploy --system
           pip install setuptools wheel
       - name: Pylint
-        run: pylint fontawesome_5
+        run: pylint fontawesome_6
       - name: Build
         run: python setup.py sdist bdist_wheel

@@ -1,8 +1,8 @@
 include LICENSE
 include README.md
-include fontawesome_5/icons.json
-include fontawesome_5/icons_semantic_ui.json
-recursive-include fontawesome_5 *.py
-recursive-include fontawesome_5/static *
-recursive-include fontawesome_5/templates *
-recursive-include fontawesome_5/templatetags *
+include fontawesome_6/icons.json
+include fontawesome_6/icons_semantic_ui.json
+recursive-include fontawesome_6 *.py
+recursive-include fontawesome_6/static *
+recursive-include fontawesome_6/templates *
+recursive-include fontawesome_6/templatetags *

@@ -1,9 +1,9 @@
 {
-  "name": "django-fontawesome-5",
+  "name": "django-fontawesome-6",
   "version": "1.0.0",
   "description": "Build tools",
   "main": "index.js",
-  "author": "Benjamin Frost",
+  "author": "Sascha Ludwig",
   "license": "BSD-2-Clause",
   "scripts": {
     "build": "rollup -c --environment INCLUDE_DEPS,BUILD:development",

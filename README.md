@@ -150,6 +150,7 @@ Required positional arguments: `icon`
 Credit to https://github.com/redouane for the original ~
 
 ## Changes
+  - tested CI
   - Updated for use with Font Awesome 6
   - Made compatible with Django 4
   - forked from https://github.com/BenjjinF/django-fontawesome-5

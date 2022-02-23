@@ -1,3 +1,9 @@
+# Django 4 compatible + FA 6
+This is a fork of https://github.com/BenjjinF/django-fontawesome-5 and I made some minor changes so this is compatible with my Django 4 Projects and makes use of Fontawesome 6.0.0
+
+I consider renaming this to django-fontawesome-6 in the near future and to provide a new python module.
+
+---
 # Not Maintained
 I have not worked with Django in a long time & have no need for this project myself any longer. If you wish to take up the responsibility, please email me at info@btfrost.com.
 
@@ -144,7 +150,10 @@ Required positional arguments: `icon`
 Credit to https://github.com/redouane for the original ~
 
 ## Changes
- - Updated for use with Font Awesome 5
- - Removed PyYAML, Select2, and jQuery as dependencies
- - Static files tag includes static dependencies for use outside admin
- - Moved rendering logic to renderers
+  - Updated for use with Font Awesome 6
+  - Made compatible with Django 4
+  - forked from https://github.com/BenjjinF/django-fontawesome-5
+  - Updated for use with Font Awesome 5
+  - Removed PyYAML, Select2, and jQuery as dependencies
+  - Static files tag includes static dependencies for use outside admin
+  - Moved rendering logic to renderers

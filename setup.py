@@ -8,7 +8,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-fontawesome-5',
-    version='1.0.18',
+    version='1.0.18.1',
     packages=['fontawesome_5'],
     include_package_data=True,
     license='BSD License',

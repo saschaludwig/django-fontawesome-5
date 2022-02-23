@@ -221,3 +221,6 @@ dmypy.json
 
 fontawesome_5/static/fontawesome_5/css/django-fontawesome.css
 fontawesome_5/static/fontawesome_5/js/django-fontawesome.js
+
+**/.DS_Store
+**/.idea

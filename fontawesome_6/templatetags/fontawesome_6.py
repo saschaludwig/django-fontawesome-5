@@ -13,12 +13,12 @@ register = template.Library()
 
 
 @register.simple_tag
-def fa5_icon(*args, **kwargs):
+def fa6_icon(*args, **kwargs):
     return Icon(*args, **kwargs).as_html()
 
 
 @register.simple_tag
-def fontawesome_5_static():
+def fontawesome_6_static():
     staticfiles = []
 
     for stylesheet in css:
@@ -26,7 +26,7 @@ def fontawesome_5_static():
             '<link href="{}" rel="stylesheet" media="all">', stylesheet))
 
     staticfiles.append(format_html(
-        '<script type="text/javascript" src="{}"></script>', static('fontawesome_5/js/django-fontawesome.js')
+        '<script type="text/javascript" src="{}"></script>', static('fontawesome_6/js/django-fontawesome.js')
     ))
 
     return mark_safe(conditional_escape('\n').join(staticfiles))

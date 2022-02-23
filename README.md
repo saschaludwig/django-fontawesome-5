@@ -4,38 +4,37 @@ This is a fork of https://github.com/BenjjinF/django-fontawesome-5 and I made so
 I consider renaming this to django-fontawesome-6 in the near future and to provide a new python module.
 
 ---
-# Not Maintained
-I have not worked with Django in a long time & have no need for this project myself any longer. If you wish to take up the responsibility, please email me at info@btfrost.com.
+# Semi-Maintained
+This is a best-effort fork, I try to keep it up-to-date but can't promise any further development.
 
-# django-fontawesome-5
+# django-fontawesome-6
 
-A utility for using icons in models, forms, and templates.
-Does support Django 3.0, which *django-fontawesome* will not.
+A utility for using icons in models, forms, and templates and supports Django 4.0.
 
-![Clip of dropdown](https://github.com/BenjjinF/django-fontawesome/blob/master/docs/images/django-fontawesome-5.gif)
+![Clip of dropdown](https://github.com/saschaludwig/django-fontawesome-6/blob/master/docs/images/django-fontawesome-5.gif)
 
 ## Migration guide from django-fontawesome
 
-1. Remove all occurences of     {% fontawesome_stylesheet %}
-1. Replace {% load fontawesome %} with {% load fontawesome_5 %}
-1. Replace '{% fontawesome_icon' with '{% fa5_icon'
+1. Remove all occurences of {% fontawesome_stylesheet %}
+1. Replace {% load fontawesome %} with {% load fontawesome_6 %}
+1. Replace '{% fontawesome_icon' with '{% fa6_icon'
 1. Replace iconnames, for example "bell" needs to be replaced with "bell fas" and "linedin-square" with "linkedin fab"
 
 ## Installation / Usage
 
-    pipenv install django-fontawesome-5
+    pipenv install django-fontawesome-6
 
-Add 'fontawesome_5' to your installed `INSTALLED_APPS`:
+Add 'fontawesome_6' to your installed `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
-        'fontawesome_5',
+        'fontawesome_6',
     )
 
 
 Import and use `IconField`:
     
-    from fontawesome_5.fields import IconField
+    from fontawesome_6.fields import IconField
 
     class Category(models.Model):
         ...
@@ -44,10 +43,10 @@ Import and use `IconField`:
 
 Include Static Files
 
-    {% load fontawesome_5 %}
+    {% load fontawesome_6 %}
 
     <head>
-      {% fontawesome_5_static %} 
+      {% fontawesome_6_static %} 
       ...
     </head>
 
@@ -55,13 +54,13 @@ Include Static Files
 
 You can configure django-fontawesome to use another release/source/cdn by specifying::
 
-    FONTAWESOME_5_CSS = URL or None
-        default: 'fontawesome_5/css/django-fontawesome.css'
-    FONTAWESOME_5_CSS_ADMIN = URL or path
+    FONTAWESOME_6_CSS = URL or None
+        default: 'fontawesome_6/css/django-fontawesome.css'
+    FONTAWESOME_6_CSS_ADMIN = URL or path
         default: None
-    FONTAWESOME_5_ICON_CLASS = 'default' or 'semantic_ui' 
+    FONTAWESOME_6_ICON_CLASS = 'default' or 'semantic_ui' 
         default: 'default'
-    FONTAWESOME_5_PREFIX = 'custom_prefix'
+    FONTAWESOME_6_PREFIX = 'custom_prefix'
         default: 'fa'
 
 ## Rendering
@@ -76,9 +75,9 @@ You can do a simple render  in your template like this:
 
 ### Default Renderer
 
-Or you can use the `{% fa5_icon %}` template tag.
+Or you can use the `{% fa6_icon %}` template tag.
 
-    {% fa5_icon 'github' 'fab' %}
+    {% fa6_icon 'github' 'fab' %}
 
 Positional arguments: `icon` (required), `style_prefix` (default: 'fas')
 
@@ -110,9 +109,9 @@ Positional arguments: `icon` (required), `style_prefix` (default: 'fas')
   
 ### Semantic UI Renderer
 
-Or you can use the `{% fa5_icon %}` template tag.
+Or you can use the `{% fa6_icon %}` template tag.
 
-    {% fa5_icon 'check' %}
+    {% fa6_icon 'check' %}
 
 Required positional arguments: `icon`
 
@@ -147,10 +146,11 @@ Required positional arguments: `icon`
 
 ## Credit
 
-Credit to https://github.com/redouane for the original ~
+Credit to https://github.com/redouane for the original \
+Also credit to https://github.com/BenjjinF for the django-fontawesome-5 version
 
 ## Changes
-  - tested CI
+  - refactored functions and classes
   - Updated for use with Font Awesome 6
   - Made compatible with Django 4
   - forked from https://github.com/BenjjinF/django-fontawesome-5

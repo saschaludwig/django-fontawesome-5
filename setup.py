@@ -7,17 +7,17 @@ README = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django-fontawesome-5',
-    version='1.0.18.1',
-    packages=['fontawesome_5'],
+    name='django-fontawesome-6',
+    version='1.0.0.0',
+    packages=['fontawesome_6'],
     include_package_data=True,
     license='BSD License',
     description='A utility for using icons in models, forms, and templates.',
     long_description=README,
     long_description_content_type='text/markdown',
-    url='https://github.com/BenjjinF/django-fontawesome-5',
-    author='Benjamin Frost',
-    author_email='info@btfrost.com',
+    url='https://github.com/saschaludwig/django-fontawesome-6',
+    author='Sascha Ludwig',
+    author_email='sascha@astrastudio.de',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',

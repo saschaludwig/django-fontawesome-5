@@ -2,6 +2,7 @@ from .app_settings import get_icon_renderer
 
 renderer = get_icon_renderer()
 
+
 class Icon:
 
     def as_html(self, **kwargs):

@@ -1,7 +1,7 @@
 # Django 4 compatible + FA 6
 This is a fork of https://github.com/BenjjinF/django-fontawesome-5 and I made some minor changes so this is compatible with my Django 4 Projects and makes use of Fontawesome 6.0.0
 
-I consider renaming this to django-fontawesome-6 in the near future and to provide a new python module.
+I renamed this to repo to "django-fontawesome-6" to provide a new python module.
 
 ---
 # Semi-Maintained

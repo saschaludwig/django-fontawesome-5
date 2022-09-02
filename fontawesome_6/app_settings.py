@@ -1,5 +1,4 @@
 from django.conf import settings
-from django.templatetags.static import static
 
 
 def get_prefix():
@@ -16,11 +15,11 @@ def get_icon_renderer():
 
 
 def get_fontawesome_6_css():
-    return getattr(settings, 'FONTAWESOME_6_CSS', static('fontawesome_6/css/all.min.css'))
+    return getattr(settings, 'FONTAWESOME_6_CSS', 'fontawesome_6/css/all.min.css')
 
 
 def get_css():
-    css = [static('fontawesome_6/css/django-fontawesome.css'),]
+    css = ['fontawesome_6/css/django-fontawesome.css']
     fontawesome_6_css = get_fontawesome_6_css()
     if fontawesome_6_css:
         css.append(fontawesome_6_css)
@@ -28,7 +27,7 @@ def get_css():
 
 
 def get_css_admin():
-    css = [static('fontawesome_6/css/django-fontawesome.css'), static('fontawesome_6/css/all.min.css')]
+    css = ['fontawesome_6/css/django-fontawesome.css', 'fontawesome_6/css/all.min.css']
     css_admin = getattr(settings, 'FONTAWESOME_6_CSS_ADMIN', None)
     if css_admin:
         css.append(css_admin)

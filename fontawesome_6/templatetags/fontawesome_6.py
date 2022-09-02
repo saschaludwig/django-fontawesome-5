@@ -22,7 +22,7 @@ def fontawesome_6_static():
 
     for stylesheet in get_css():
         staticfiles.append(format_html(
-            '<link href="{}" rel="stylesheet" media="all">', stylesheet))
+            '<link href="{}" rel="stylesheet" media="all">', static(stylesheet)))
 
     staticfiles.append(format_html(
         '<script type="text/javascript" src="{}"></script>', static('fontawesome_6/js/django-fontawesome.js')

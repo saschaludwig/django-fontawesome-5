@@ -8,7 +8,6 @@ from .. import Icon
 from ..app_settings import get_css
 
 
-css = get_css()
 register = template.Library()
 
 
@@ -21,7 +20,7 @@ def fa6_icon(*args, **kwargs):
 def fontawesome_6_static():
     staticfiles = []
 
-    for stylesheet in css:
+    for stylesheet in get_css():
         staticfiles.append(format_html(
             '<link href="{}" rel="stylesheet" media="all">', stylesheet))
 

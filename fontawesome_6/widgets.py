@@ -6,7 +6,6 @@ from .app_settings import get_css_admin
 from .utils import get_icon_choices
 
 
-css_admin = get_css_admin()
 CHOICES = get_icon_choices()
 
 
@@ -23,5 +22,5 @@ class IconWidget(forms.Select):
         )
 
         css = {
-            'all': css_admin
+            'all': get_css_admin()
         }

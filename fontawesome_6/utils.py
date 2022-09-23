@@ -19,7 +19,7 @@ def get_icon_choices():
         'light': 'fal',
     }
 
-    with open(os.path.join(os.path.dirname(__file__), path)) as f:
+    with open(os.path.join(os.path.dirname(__file__), path), encoding="utf-8") as f:
         icons = json.load(f)
 
     for icon in icons:
